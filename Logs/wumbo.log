@@ -1,3 +1,76 @@
 2021-05-07 21:10:56,166 [INFO]: Test log
 2021-05-07 21:11:20,449 [INFO]: Test log
 2021-05-07 21:14:44,598 [INFO]: ***STARTUP***
+2021-05-07 21:29:08,048 [INFO]: ***STARTUP***
+2021-05-07 21:33:13,564 [INFO]: ***STARTUP***
+2021-05-07 22:01:17,243 [INFO]: ***STARTUP***
+2021-05-07 22:03:41,734 [INFO]: ***STARTUP***
+2021-05-07 22:03:44,229 [INFO]: Registering new user to the database...
+2021-05-07 22:03:44,229 [ERROR]: Experienced an error registering a new user
+2021-05-07 22:04:13,263 [INFO]: ***STARTUP***
+2021-05-07 22:04:19,247 [INFO]: Registering new user to the database...
+2021-05-07 22:07:07,563 [INFO]: ***STARTUP***
+2021-05-07 22:07:10,188 [INFO]: Registering new user to the database...
+2021-05-07 22:07:33,400 [ERROR]: <class 'Exception'>
+2021-05-07 22:08:12,644 [INFO]: ***STARTUP***
+2021-05-07 22:08:16,431 [INFO]: Registering new user to the database...
+2021-05-07 22:08:53,769 [INFO]: ***STARTUP***
+2021-05-07 22:08:56,265 [INFO]: Registering new user to the database...
+2021-05-07 22:09:04,935 [ERROR]: ('The SQL contains 2 parameter markers, but 3 parameters were supplied', 'HY000')
+2021-05-07 22:09:09,105 [ERROR]: Experienced an error registering a new user
+2021-05-07 22:11:53,896 [INFO]: ***STARTUP***
+2021-05-07 22:11:57,597 [INFO]: Registering new user to the database...
+2021-05-07 22:25:06,972 [INFO]: ***STARTUP***
+2021-05-07 22:25:17,406 [INFO]: Registering new user to the database...
+2021-05-07 22:25:17,424 [INFO]: Successfully added new user John!
+2021-05-07 22:26:46,054 [INFO]: Registering new user to the database...
+2021-05-07 22:26:46,097 [ERROR]: Error encountered: ('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Violation of PRIMARY KEY constraint 'PK_Users'. Cannot insert duplicate key in object 'dbo.Users'. The duplicate key value is (99721317451829248). (2627) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+2021-05-07 22:26:46,138 [ERROR]: Experienced an error registering a new user
+2021-05-07 22:42:57,514 [INFO]: Registering new user to the database...
+2021-05-07 22:42:57,567 [ERROR]: Error encountered: ('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Violation of PRIMARY KEY constraint 'PK_Users'. Cannot insert duplicate key in object 'dbo.Users'. The duplicate key value is (99721317451829248). (2627) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+2021-05-07 22:42:57,570 [ERROR]: Experienced an error registering a new user
+2021-05-07 23:15:05,412 [INFO]: ***STARTUP***
+2021-05-07 23:15:10,730 [INFO]: Registering new user to the database...
+2021-05-07 23:17:45,955 [INFO]: ***STARTUP***
+2021-05-07 23:17:48,062 [INFO]: Registering new user to the database...
+2021-05-07 23:23:34,879 [INFO]: ***STARTUP***
+2021-05-07 23:23:40,585 [INFO]: Registering new user to the database...
+2021-05-07 23:23:40,598 [ERROR]: ('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Violation of PRIMARY KEY constraint 'PK_Users'. Cannot insert duplicate key in object 'dbo.Users'. The duplicate key value is (99721317451829248). (2627) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+Traceback (most recent call last):
+  File "c:\Users\JohnM\Desktop\Projects\Wumbo\wumbo.py", line 29, in register
+    sql.insertUser(user_attributes)
+  File "c:\Users\JohnM\Desktop\Projects\Wumbo\sql.py", line 19, in insertUser
+    attributes
+pyodbc.IntegrityError: ('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Violation of PRIMARY KEY constraint 'PK_Users'. Cannot insert duplicate key in object 'dbo.Users'. The duplicate key value is (99721317451829248). (2627) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+2021-05-07 23:24:00,433 [INFO]: ***STARTUP***
+2021-05-07 23:24:02,084 [INFO]: Registering new user to the database...
+2021-05-07 23:24:02,095 [ERROR]: ('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Violation of PRIMARY KEY constraint 'PK_Users'. Cannot insert duplicate key in object 'dbo.Users'. The duplicate key value is (99721317451829248). (2627) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+Traceback (most recent call last):
+  File "c:\Users\JohnM\Desktop\Projects\Wumbo\wumbo.py", line 29, in register
+    sql.insertUser(user_attributes)
+  File "c:\Users\JohnM\Desktop\Projects\Wumbo\sql.py", line 19, in insertUser
+    attributes
+pyodbc.IntegrityError: ('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Violation of PRIMARY KEY constraint 'PK_Users'. Cannot insert duplicate key in object 'dbo.Users'. The duplicate key value is (99721317451829248). (2627) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+2021-05-07 23:25:28,362 [INFO]: ***STARTUP***
+2021-05-07 23:26:03,810 [INFO]: Registering new user to the database...
+2021-05-07 23:26:03,867 [ERROR]: ('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Violation of PRIMARY KEY constraint 'PK_Users'. Cannot insert duplicate key in object 'dbo.Users'. The duplicate key value is (99721317451829248). (2627) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+Traceback (most recent call last):
+  File "c:\Users\JohnM\Desktop\Projects\Wumbo\wumbo.py", line 29, in register
+    sql.insertUser(user_attributes)
+  File "c:\Users\JohnM\Desktop\Projects\Wumbo\sql.py", line 19, in insertUser
+    attributes
+pyodbc.IntegrityError: ('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Violation of PRIMARY KEY constraint 'PK_Users'. Cannot insert duplicate key in object 'dbo.Users'. The duplicate key value is (99721317451829248). (2627) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+2021-05-07 23:26:03,869 [DEBUG]: User has already registered with the bot.
+2021-05-07 23:26:42,008 [INFO]: ***STARTUP***
+2021-05-07 23:30:16,131 [INFO]: Registering new user to the database...
+2021-05-07 23:30:16,159 [ERROR]: ('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Violation of PRIMARY KEY constraint 'PK_Users'. Cannot insert duplicate key in object 'dbo.Users'. The duplicate key value is (99721317451829248). (2627) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+Traceback (most recent call last):
+  File "c:\Users\JohnM\Desktop\Projects\Wumbo\wumbo.py", line 29, in register
+    sql.insertUser(user_attributes)
+  File "c:\Users\JohnM\Desktop\Projects\Wumbo\sql.py", line 19, in insertUser
+    attributes
+pyodbc.IntegrityError: ('23000', "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Violation of PRIMARY KEY constraint 'PK_Users'. Cannot insert duplicate key in object 'dbo.Users'. The duplicate key value is (99721317451829248). (2627) (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated. (3621)")
+2021-05-07 23:30:16,161 [DEBUG]: User has already registered with the bot.
+2021-05-07 23:42:26,235 [INFO]: ***STARTUP***
+2021-05-07 23:42:33,240 [INFO]: Registering new user to the database...
+2021-05-07 23:42:33,275 [INFO]: Successfully added new user John!

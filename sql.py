@@ -11,7 +11,15 @@ SQL_PASS = data['sql'][0]['SQL_PASS']
 
 #TODO: Write this one
 def insertUser(attributes):
-    pass
+    cursor = conn.cursor()
+    
+    
+    cursor.execute(
+        'INSERT INTO dbo.Users VALUES(?,?,?);',
+        attributes
+    )
+    conn.commit()
+    return 1
 
 
 
@@ -26,6 +34,3 @@ conn = pyodbc.connect(
     "Trusted_Connection=no"
 )
 
-if(__name__ == "__main__"):
-    read(conn)
-    delete(conn)

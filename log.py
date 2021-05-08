@@ -24,6 +24,9 @@ def error(message):
 
 def critical(message):
     log.critical(message)
+
+def exception(message):
+    log.exception(message)
     
 
 
