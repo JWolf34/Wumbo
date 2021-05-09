@@ -21,6 +21,16 @@ def insertUser(attributes):
     conn.commit()
     return 1
 
+def insertGame(attributes):
+    cursor = conn.cursor()
+    
+    
+    cursor.execute(
+        'INSERT INTO dbo.Games (Name, Client, WebLink, Description, Trailer, NumPlayers, BasePrice) VALUES(?,?,?,?,?,?,?);',
+        attributes
+    )
+    conn.commit()
+    return 1
 
 
 
