@@ -38,8 +38,31 @@ async def register(ctx):
         else:
             log.error("Encountered an error registering the user")
             await ctx.send("Hmm... I couldn't register you. Try again later.")
-    
 
+@client.command()
+async def subscribe(ctx, gameName):
+    games = sql.selectGameWithName(gameName)
+
+    if len(games) == 0:
+        await ctx.send("I didn't find any games with that title. Try a different game.")
+
+    elif len(games) == 1:
+        isUserSubscribed = sql.isUserSubscribed(games[0], ctx.author.id)
+
+        if isUserSubscribed:
+            await ctx.send("You're already subscribed to " + games[0] + ".")
+        else:
+            sql.insertSubscription(ctx.author.id, games[0])
+            await ctx.send("You've subscribed to " + games[0] + "!")
+            
+    elif len(games) > 1:
+        #TODO
+        pass
+
+
+
+    
+sql.selectGameWithName("A")
 
 
 client.run(TOKEN)

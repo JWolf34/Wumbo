@@ -6,7 +6,11 @@ scope = ["https://spreadsheets.google.com/feeds",'https://www.googleapis.com/aut
 creds = ServiceAccountCredentials.from_json_keyfile_name("google_secret.json", scope)
 client = gspread.authorize(creds)
 
-def getMultiplayerGameData():
+
+"""
+    Initial crawl for google sheets game data. Reserved for later use, but not necessary to use while the bot is running.
+"""
+def getMultiplayerGameDataInit():
     ws_multiplayer = client.open_by_key('1eBgg9IlyGam_SO7gmymqR4O_xOQ5THshz5-JyLhsMLI').worksheet('Multiplayer')
 
     gameCols ={
@@ -43,4 +47,4 @@ def insertGameData(attributes):
     sql.insertGame(attributes)
 
 if __name__ == "__main__":
-    getMultiplayerGameData()
+   # getMultiplayerGameDataInit()
